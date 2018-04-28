@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[MySQL数据查询整理]]></title>
+    <url>%2F2018%2F04%2F28%2FMySQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E6%95%B4%E7%90%86%2F</url>
+    <content type="text"><![CDATA[MySQL——常用查询整理 MySQL查询语句结构复杂难懂，特地开一个连载记录分享一下查询有关知识简单查询（一）简单查询是按照一定的条件在单一的表上进行数据查询，还包括查询结果的排序与利用结果生成新表。完整的SELECT语句结构:12345678select&lt;子句 1&gt; from&lt;子句 2&gt; [where &lt;表达式 1&gt;] [group by &lt;子句 3&gt;] [having &lt;表达式 2&gt;] [order by &lt;子句 4&gt;] [limit &lt;子句 5&gt;] [union &lt;操作符&gt;]select 子句指定查询结果中需要返回的值from 子句指定从其中检索行的表和视图where 表达式指定查询的搜索条件group by 子句指定查询结果的分组条件having 表达式指定分组或集合的查询条件order by 子句指定查询结果的排序方法limit 子句可以被用于限制被 select 语句返回的行数]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[我的第一篇文章]]></title>
     <url>%2F2018%2F04%2F07%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%2F</url>
     <content type="text"><![CDATA[这是我的第一篇文章 聊聊建站起因 可能是年龄增长导致的心里成熟?（雾）游戏玩够了，电影看够了，总得找点事干，不然岂不是虚度几年大学时光,总之学习重要。本来考虑租一个便宜的服务器来建站记录个人经历和生活，但是奈何经济危机连阿里云大学生专享都租不起（捂脸），还好有朋友带路@taoist。找到利用Hexo+GitHub搭建个人博客的方法，也在网上找了一些攻略，终于成功做出一个简单的个人博客建站过程 建站过程我还是不写了，毕竟有许多前辈分享过他们的成功经验，只推荐几篇有用的文章或许可以帮助其他人——附于文章末尾。随便写写第一篇文章也不知道写点啥，分享一首诗吧《读山海经》精卫衔微木，将以填沧海。刑天舞干戚，猛志固常在。同物既无虑，化去不复悔。徒设在昔心，良辰讵可待！参考文档https://www.jianshu.com/p/f054333ac9e6https://www.jianshu.com/p/e68fba58f75chttps://www.zhihu.com/question/24422335https://hexo.io/themes/]]></content>
