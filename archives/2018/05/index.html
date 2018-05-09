@@ -104,9 +104,9 @@
       author: '博主'
     },
     algolia: {
-      applicationID: 'WIJR145DCA',
+      applicationID: '',
       apiKey: '',
-      indexName: 'BlogSearch',
+      indexName: '',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
@@ -261,7 +261,7 @@
         
           
         
-        嗯..! 目前共计 3 篇日志。 继续努力。
+        嗯..! 目前共计 4 篇日志。 继续努力。
       </span>
 
       
@@ -275,6 +275,43 @@
           <div class="collection-title">
             <h1 class="archive-year" id="archive-year-2018">2018</h1>
           </div>
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2018/05/09/Win10双显卡导致鼠标卡顿问题解决办法/" itemprop="url">
+              
+                <span itemprop="name">解决Win10显卡冲突导致鼠标卡顿</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-05-09T16:23:33+08:00"
+              content="2018-05-09" >
+          05-09
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
         
         
 
@@ -323,7 +360,40 @@
 
 
           
-
+       <div onclick="showGitment()" id="gitment_title" class="gitment_title">显示 Gitment 评论</div>
+       <div id="container" style="display:none"></div>
+       <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+       <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+       <script>
+       const myTheme = {
+         render(state, instance) {
+           const container = document.createElement('div');
+           container.lang = "en-US";
+           container.className = 'gitment-container gitment-root-container';
+           container.appendChild(instance.renderHeader(state, instance));
+           container.appendChild(instance.renderEditor(state, instance));
+           container.appendChild(instance.renderComments(state, instance));
+           container.appendChild(instance.renderFooter(state, instance));
+           return container;
+         }
+       }
+       function showGitment() {
+         $("#gitment_title").attr("style", "display:none");
+         $("#container").attr("style", "").addClass("gitment_container");
+         var gitment = new Gitment({
+           id: window.location.pathname,
+           theme: myTheme,
+           owner: '',
+           repo: '',
+           oauth: {
+             client_id: '68df52015dfd07f0ae1b',
+             client_secret: '19f723baa43551d0753b8d4400cf563e92577e54'
+           }
+         });
+         gitment.render('container');
+       }
+       </script>
+   
         </div>
         
           
@@ -363,7 +433,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -376,7 +446,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -603,6 +673,19 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
 
 
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>解决Win10显卡冲突导致鼠标卡顿</title>
+      <link href="/2018/05/09/Win10%E5%8F%8C%E6%98%BE%E5%8D%A1%E5%AF%BC%E8%87%B4%E9%BC%A0%E6%A0%87%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+      <url>/2018/05/09/Win10%E5%8F%8C%E6%98%BE%E5%8D%A1%E5%AF%BC%E8%87%B4%E9%BC%A0%E6%A0%87%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+      <content type="html"><![CDATA[<h2 id="使用TrayPwrD3解决显卡冲突导致的鼠标卡顿问题"><a href="#使用TrayPwrD3解决显卡冲突导致的鼠标卡顿问题" class="headerlink" title="使用TrayPwrD3解决显卡冲突导致的鼠标卡顿问题"></a>使用TrayPwrD3解决显卡冲突导致的鼠标卡顿问题</h2><p>最近突然发现部分Win10系统会因为Intel核显与N卡独显的冲突，导致鼠标在打开一些应用时出现鼠标卡顿现象，网络上找到的解决方案没有什么*用。上下求索后终于在github上找到一个小工具 :<br><br><a href="https://github.com/jobeid/TrayPwrD3" target="_blank" rel="noopener"><strong>TrayPwrD3</strong></a><br></p><blockquote><p>TrayPwrD3 官方介绍<br>Keeps dGPU on but idle until needed. This addresses the Windows 10 stutter/mouse freeze on dual GPU laptops. TrayPwrD3 runs in the background and stays in a tray icon. Tray icon<br>Other functionality: single click turns monitor off to save power until you wake it up by moving the mouse or using the keyboard; provides several menu options on right click; more details in Help menu.<br>This is to address the Windows 10 and Optimus problem of stutters and mouse hangs. For more about this issue see description on answers.microsoft Intel + NVIDIA Laptop Freeze Problem. Note: it is not for stutters in games. It only addresses the desktop stutters in Windows 10 (right click -&gt; display settings, battery icon, chrome and firefox tabs, PowerPoint slideshow etc). If you don’t have any of these, then you don’t need it.</p></blockquote><p>PS : TrayPwrD3可以临时禁用核显，这是暂时的解决办法</p><p>1.TrayPwrD3只支持64位系统，需要vs2015支持库，DirectX12；<br>2.若要开机启动，就将程序快捷方式放到:</p><pre>%USERPROFILE%\AppData\Roaming\Microsoft\Windows\StartMenu\Programs\STARTUP#用户配置文件夹\AppData\Roaming\Microsoft\Windows\「开始」菜单\程序\启动</pre><hr><p>TrayPwrD3：<a href="https://github.com/jobeid/TrayPwrD3#installation" target="_blank" rel="noopener">https://github.com/jobeid/TrayPwrD3#installation</a></p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> ljwin10 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2018/05/06/hello-world/"/>
+      <url>/2018/05/06/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>MySQL数据查询整理</title>
+      <link href="/2018/04/28/MySQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E6%95%B4%E7%90%86/"/>
+      <url>/2018/04/28/MySQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E6%95%B4%E7%90%86/</url>
+      <content type="html"><![CDATA[<p></p><h1>MySQL——常用查询整理</h1><p></p><p><br>MySQL查询语句结构复杂难懂，特地开一个连载记录分享一下查询有关知识<br></p><br><h2>简单查询（一）</h2><br><p><br>简单查询是按照一定的条件在单一的表上进行数据查询，还包括查询结果的排序与利用结果生成新表。<br></p><br>完整的SELECT语句结构:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select&lt;子句 1&gt;</span><br><span class="line">from&lt;子句 2&gt;</span><br><span class="line">[where &lt;表达式 1&gt;]</span><br><span class="line">[group by &lt;子句 3&gt;]</span><br><span class="line">[having &lt;表达式 2&gt;]</span><br><span class="line">[order by &lt;子句 4&gt;]</span><br><span class="line">[limit &lt;子句 5&gt;]</span><br><span class="line">[union &lt;操作符&gt;]</span><br></pre></td></tr></table></figure><br><br><p><br>select 子句指定查询结果中需要返回的值<br>from 子句指定从其中检索行的表和视图<br>where 表达式指定查询的搜索条件<br>group by 子句指定查询结果的分组条件<br>having 表达式指定分组或集合的查询条件<br>order by 子句指定查询结果的排序方法<br>limit 子句可以被用于限制被 select 语句返回的行数<br></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>我的第一篇文章</title>
+      <link href="/2018/04/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2018/04/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      <content type="html"><![CDATA[<p></p><h2>这是我的第一篇文章</h2><p></p><p></p><h3>聊聊建站起因</h3><p></p><p>        <del>可能是年龄增长导致的心里成熟?（雾）</del>游戏玩够了，电影看够了，总得找点事干，不然岂不是虚度几年大学时光,总之学习重要。本来考虑租一个便宜的服务器来建站记录个人经历和生活，但是奈何经济危机连<del>阿里云</del>大学生专享都租不起（捂脸），还好有朋友带路@taoist。找到利用Hexo+GitHub搭建个人博客的方法，也在网上找了一些攻略，终于成功做出一个简单的个人博客<br></p><br><h3>建站过程</h3><br><p>        建站过程我还是不写了，毕竟有许多前辈分享过他们的成功经验，只推荐几篇有用的文章或许可以帮助其他人——附于文章末尾。<br></p><br><h3>随便写写</h3><br>第一篇文章也不知道写点啥，分享一首诗吧<br><center><br>《读山海经》<br>精卫衔微木，将以填沧海。<br>刑天舞干戚，猛志固常在。<br>同物既无虑，化去不复悔。<br>徒设在昔心，良辰讵可待！<br></center><br><h3>参考文档</h3><br><p><a href="https://www.jianshu.com/p/f054333ac9e6" target="_blank" rel="noopener">https://www.jianshu.com/p/f054333ac9e6</a></p><br><p><a href="https://www.jianshu.com/p/e68fba58f75c" target="_blank" rel="noopener">https://www.jianshu.com/p/e68fba58f75c</a></p><br><p><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="noopener">https://www.zhihu.com/question/24422335</a></p><br><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> 杂谈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>
