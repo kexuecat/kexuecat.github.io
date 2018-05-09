@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
 <meta property="og:description" content="使用TrayPwrD3解决显卡冲突导致的鼠标卡顿问题最近突然发现部分Win10系统会因为Intel核显与N卡独显的冲突，导致鼠标在打开一些应用时出现鼠标卡顿现象，网络上找到的解决方案没有什么*用。上下求索后终于在github上找到一个小工具 :TrayPwrD3    TrayPwrD3 官方介绍Keeps dGPU on but idle until needed. This addresses">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-09T09:53:45.813Z">
+<meta property="og:updated_time" content="2018-05-09T10:03:23.871Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决Win10显卡冲突导致鼠标卡顿">
 <meta name="twitter:description" content="使用TrayPwrD3解决显卡冲突导致的鼠标卡顿问题最近突然发现部分Win10系统会因为Intel核显与N卡独显的冲突，导致鼠标在打开一些应用时出现鼠标卡顿现象，网络上找到的解决方案没有什么*用。上下求索后终于在github上找到一个小工具 :TrayPwrD3    TrayPwrD3 官方介绍Keeps dGPU on but idle until needed. This addresses">
@@ -309,18 +309,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/05/09/Win10双显卡导致鼠标卡顿问题解决办法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/09/Win10双显卡导致鼠标卡顿问题解决办法/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
 
           
           
@@ -426,10 +414,40 @@
 
 
           
-
-  
-
-
+       <div onclick="showGitment()" id="gitment_title" class="gitment_title">显示 Gitment 评论</div>
+       <div id="container" style="display:none"></div>
+       <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+       <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+       <script>
+       const myTheme = {
+         render(state, instance) {
+           const container = document.createElement('div');
+           container.lang = "en-US";
+           container.className = 'gitment-container gitment-root-container';
+           container.appendChild(instance.renderHeader(state, instance));
+           container.appendChild(instance.renderEditor(state, instance));
+           container.appendChild(instance.renderComments(state, instance));
+           container.appendChild(instance.renderFooter(state, instance));
+           return container;
+         }
+       }
+       function showGitment() {
+         $("#gitment_title").attr("style", "display:none");
+         $("#container").attr("style", "").addClass("gitment_container");
+         var gitment = new Gitment({
+           id: window.location.pathname,
+           theme: myTheme,
+           owner: '',
+           repo: '',
+           oauth: {
+             client_id: '68df52015dfd07f0ae1b',
+             client_secret: '19f723baa43551d0753b8d4400cf563e92577e54'
+           }
+         });
+         gitment.render('container');
+       }
+       </script>
+   
         </div>
         
           
@@ -750,30 +768,6 @@
 
     
 
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'kexuecat',
-            repo: 'kexuecat.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '19f723baa43551d0753b8d4400cf563e92577e54',
-            
-                client_id: '68df52015dfd07f0ae1b'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
     
 
 
