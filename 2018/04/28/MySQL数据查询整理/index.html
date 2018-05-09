@@ -410,6 +410,12 @@
           
 
   
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
+	  
+
 
 
         </div>
@@ -721,45 +727,29 @@
 
 
 
-
-<!-- LOCAL: You can save these files to your site and update links -->
     
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
     
-<!-- END LOCAL -->
-
     
-
     
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'kexuecat',
-            repo: 'kexuecat.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '19f723baa43551d0753b8d4400cf563e92577e54',
-            
-                client_id: '68df52015dfd07f0ae1b'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
     
-
-
-
+        <script type="text/javascript">
+            function showGitment(){
+                document.getElementById("gitment-display-button").style.display = "none";
+                document.getElementById("gitment-container").style.display = "block";
+                var gitment = new Gitment({
+                        id: window.location.pathname, 
+                        owner: '',
+                        repo: '',
+                        oauth: {
+                            client_id: '68df52015dfd07f0ae1b',
+                            client_secret: '19f723baa43551d0753b8d4400cf563e92577e54',
+                        }});
+                gitment.render('gitment-container');
+            }
+        </script>
+    
 
 
 
