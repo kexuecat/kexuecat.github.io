@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
 <meta property="og:description" content="从“零”开始折腾服务器(三)=======================之前已经配置成功了一台云服务器 “生命不息，折腾不止” 有了自己的服务器，当然要做点什么。当年MineCraft 我的世界火的铺天盖地，因为当时还小所以没有机会也没有能力拥有自己的联机服务器，所以有了服务器，先来实现一下儿时的心愿。 1.检查是否配置了Java环境MineCraft是使用Java语言开发的，所以想要正常运行需">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-20T08:10:39.611Z">
+<meta property="og:updated_time" content="2018-12-04T06:52:31.691Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从零开始折腾服务器(三)">
 <meta name="twitter:description" content="从“零”开始折腾服务器(三)=======================之前已经配置成功了一台云服务器 “生命不息，折腾不止” 有了自己的服务器，当然要做点什么。当年MineCraft 我的世界火的铺天盖地，因为当时还小所以没有机会也没有能力拥有自己的联机服务器，所以有了服务器，先来实现一下儿时的心愿。 1.检查是否配置了Java环境MineCraft是使用Java语言开发的，所以想要正常运行需">
@@ -343,7 +343,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  806
+                  791
                 </span>
               
 
@@ -383,63 +383,25 @@
         <h1 id="从“零”开始折腾服务器-三"><a href="#从“零”开始折腾服务器-三" class="headerlink" title="从“零”开始折腾服务器(三)"></a>从“零”开始折腾服务器(三)</h1><p>=======================<br>之前已经配置成功了一台云服务器</p>
 <p>“生命不息，折腾不止”</p>
 <p>有了自己的服务器，当然要做点什么。当年MineCraft 我的世界火的铺天盖地，因为当时还小所以没有机会也没有能力拥有自己的联机服务器，所以有了服务器，先来实现一下儿时的心愿。</p>
-<h4 id="1-检查是否配置了Java环境"><a href="#1-检查是否配置了Java环境" class="headerlink" title="1.检查是否配置了Java环境"></a>1.检查是否配置了Java环境</h4><p>MineCraft是使用Java语言开发的，所以想要正常运行需要Java环境的支持    </p>
-<pre><code>java -version
-
-minecraft@vultr:~$ java -version
-openjdk version &quot;1.8.0_181&quot;
-OpenJDK Runtime Environment (build 1.8.0_181-8u181-b13-2~deb9u1-b13)
-OpenJDK 64-Bit Server VM (build 25.181-b13, mixed mode)
-</code></pre><p>我这里安装的是1.8的版本,一般安装1.8即可<br>如果返回Java版本号说明已经有了Java环境可以跳过第二步</p>
-<h4 id="2-安装Java"><a href="#2-安装Java" class="headerlink" title="2.安装Java"></a>2.安装Java</h4><p>我用的操作系统是Debian 9，如果是其他操作系统请Google</p>
-<pre><code>sudo apt-get install oracle-java8-installer
-</code></pre><h4 id="3-下载MineCraft服务器端"><a href="#3-下载MineCraft服务器端" class="headerlink" title="3.下载MineCraft服务器端"></a>3.下载MineCraft服务器端</h4><p>在此之前先提醒：客户端版本不能高于服务器端版本号<br>例如：我的游戏客户端版本号是1.12，服务器端版本号就必须是1.12</p>
-<p>(1)新建一个文件夹并前往</p>
-<pre><code>mkdir minecraft &amp;&amp; cd minecraft
-</code></pre><p>(2)下载需要的服务器端文件</p>
-<pre><code>sudo wget https://s3.amazonaws.com/Minecraft.Download/versions/版本号/minecraft_server.版本号.jar
-博主的版本：
-sudo wget https://s3.amazonaws.com/Minecraft.Download/versions/1.12/minecraft_server.1.12.jar
-</code></pre><h4 id="4-启动服务器前的准备工作"><a href="#4-启动服务器前的准备工作" class="headerlink" title="4.启动服务器前的准备工作"></a>4.启动服务器前的准备工作</h4><p>(1)服务器运行需要内存所以要先查看一下内存使用情况</p>
-<pre><code>free -h
-
-minecraft@vultr:~$ free -h
-          total        used       free      shared   buff/cache   available
-Mem:      486M         60M        240M       5.1M    185M         407M
-Swap:     1.0G         12M        1.0G
-</code></pre><p>(2)创建一个启动脚本文件</p>
-<pre><code>vi start.sh
-
-#!/bin/sh
-java -Xms[最小内存]m -Xmx[最大内存]m -jar 服务器端文件绝对路径 nogui
-博主的示范：
-#!/bin/sh
-java -Xms120m -Xmx160m -jar /home/minecraft/minecraft_server.1.12.jar nogui
-
-:wq即可
-</code></pre><p>这里路径使用绝对路径，之前博主无论如何都启动不了，检查之后才发现路径有问题<br>如果不知道文件路径就使用pwd命令查看<br>nogui参数是取消服务器的图形化界面可以减少内存的占用，也可以不写</p>
-<p>脚本文件创建完成后</p>
-<pre><code>bash start.sh
-
-即可启动服务器
-</code></pre><h4 id="5-连接服务器"><a href="#5-连接服务器" class="headerlink" title="5.连接服务器"></a>5.连接服务器</h4><p><strong>打开我的世界客户端,选择多人游戏,将你的服务器的IP地址填上点连接即可。</strong></p>
-<h4 id="6-解决各种问题"><a href="#6-解决各种问题" class="headerlink" title="6.解决各种问题"></a>6.解决各种问题</h4><p>(1)第一次运行失败很大原因是因为没有同意协议</p>
-<pre><code>vi eula.txt
-找到
-eula=false
-改成
-elua=true
-</code></pre><p>(2)服务器连接失败</p>
-<p>服务器启动成功了，客户端也找到了服务器，但是连接失败</p>
-<pre><code>vi server.propertices
-找到
-online-mode:true
-修改为
-online-mode:false
-</code></pre><p>出现这个问题的原因是正版验证没有通过</p>
-<p>(3)对生成的世界不满意或者需要调整服务器设置</p>
-<pre><code>vi server.propertices
-</code></pre><p>这个文件里存放的是世界的配置，详情修改可以Google</p>
+<h4 id="1-检查是否配置了Java环境"><a href="#1-检查是否配置了Java环境" class="headerlink" title="1.检查是否配置了Java环境"></a>1.检查是否配置了Java环境</h4><p>MineCraft是使用Java语言开发的，所以想要正常运行需要Java环境的支持   </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br><span class="line"></span><br><span class="line">minecraft@vultr:~$ java -version</span><br><span class="line">openjdk version <span class="string">"1.8.0_181"</span></span><br><span class="line">OpenJDK Runtime Environment (build 1.8.0_181-8u181-b13-2~deb9u1-b13)</span><br><span class="line">OpenJDK 64-Bit Server VM (build 25.181-b13, mixed mode)</span><br></pre></td></tr></table></figure>
+<p>我这里安装的是1.8的版本,一般安装1.8即可<br>如果返回Java版本号说明已经有了Java环境可以跳过第二步</p>
+<h4 id="2-安装Java"><a href="#2-安装Java" class="headerlink" title="2.安装Java"></a>2.安装Java</h4><p>我用的操作系统是Debian 9，如果是其他操作系统请Google<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install oracle-java8-installer</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-下载MineCraft服务器端"><a href="#3-下载MineCraft服务器端" class="headerlink" title="3.下载MineCraft服务器端"></a>3.下载MineCraft服务器端</h4><p>在此之前先提醒：客户端版本不能高于服务器端版本号<br>例如：我的游戏客户端版本号是1.12，服务器端版本号就必须是1.12</p>
+<p>(1)新建一个文件夹并前往<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir minecraft &amp;&amp; <span class="built_in">cd</span> minecraft</span><br></pre></td></tr></table></figure></p>
+<p>(2)下载需要的服务器端文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo wget https://s3.amazonaws.com/Minecraft.Download/versions/版本号/minecraft_server.版本号.jar</span><br><span class="line">博主的版本：</span><br><span class="line">sudo wget https://s3.amazonaws.com/Minecraft.Download/versions/1.12/minecraft_server.1.12.jar</span><br></pre></td></tr></table></figure></p>
+<h4 id="4-启动服务器前的准备工作"><a href="#4-启动服务器前的准备工作" class="headerlink" title="4.启动服务器前的准备工作"></a>4.启动服务器前的准备工作</h4><p>(1)服务器运行需要内存所以要先查看一下内存使用情况<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">free -h</span><br><span class="line"></span><br><span class="line">minecraft@vultr:~$ free -h</span><br><span class="line">          total        used       free      shared   buff/cache   available</span><br><span class="line">Mem:      486M         60M        240M       5.1M    185M         407M</span><br><span class="line">Swap:     1.0G         12M        1.0G</span><br></pre></td></tr></table></figure></p>
+<p>(2)创建一个启动脚本文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vi start.sh</span><br><span class="line"></span><br><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">java -Xms[最小内存]m -Xmx[最大内存]m -jar 服务器端文件绝对路径 nogui</span><br><span class="line">博主的示范：</span><br><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">java -Xms120m -Xmx160m -jar /home/minecraft/minecraft_server.1.12.jar nogui</span><br></pre></td></tr></table></figure></p>
+<p>这里路径使用绝对路径，之前博主无论如何都启动不了，检查之后才发现路径有问题<br>如果不知道文件路径就使用pwd命令查看<br>nogui参数是取消服务器的图形化界面可以减少内存的占用，也可以不写</p>
+<p>脚本文件创建完成后<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash start.sh</span><br></pre></td></tr></table></figure></p>
+<p>即可启动服务器</p>
+<h4 id="5-连接服务器"><a href="#5-连接服务器" class="headerlink" title="5.连接服务器"></a>5.连接服务器</h4><p><strong>打开我的世界客户端,选择多人游戏,将你的服务器的IP地址填上点连接即可。</strong></p>
+<h4 id="6-解决各种问题"><a href="#6-解决各种问题" class="headerlink" title="6.解决各种问题"></a>6.解决各种问题</h4><p>(1)第一次运行失败很大原因是因为没有同意协议<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vi eula.txt</span><br><span class="line">找到</span><br><span class="line">eula=<span class="literal">false</span></span><br><span class="line">改成</span><br><span class="line">elua=<span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<p>(2)服务器连接失败</p>
+<p>服务器启动成功了，客户端也找到了服务器，但是连接失败<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi server.propertices</span><br></pre></td></tr></table></figure></p>
+<p> 找到<br>   online-mode:true<br>   修改为<br>   online-mode:false<br>出现这个问题的原因是正版验证没有通过</p>
+<p>(3)对生成的世界不满意或者需要调整服务器设置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi server.propertices</span><br></pre></td></tr></table></figure></p>
+<p>这个文件里存放的是世界的配置，详情修改可以Google</p>
 <p><strong><em>至此，MineCraft纯净服务器搭建成功，后续有需要会添加Mod</em></strong></p>
 
       
@@ -584,7 +546,7 @@ online-mode:false
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -681,7 +643,7 @@ online-mode:false
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3k</span>
+    <span title="Site words total count">3.1k</span>
   
 </div>
 
