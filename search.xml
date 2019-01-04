@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Java-每天一道练习题(4)</title>
+      <link href="/2019/01/04/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-4/"/>
+      <url>/2019/01/04/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-4/</url>
+      <content type="html"><![CDATA[<h1 id="第四天"><a href="#第四天" class="headerlink" title="第四天"></a>第四天</h1><p>将一个正整数分解因数<br><b><br>  每个合数都可以写成几个质数相乘的形式。其中每个质数都是这个合数的因数，叫做这个合数的分解质因数<br></b></p><p>例如：输入80，打印：80=1*2*2*2*2*5  </p><p>思路:  </p><blockquote><p>定义合数i,定义质因数k;<br>如果i != k但是i%k==0,那么k就是i的质因数之一,打印出k,并把i/k作为i的新值;<br>如果i%k != 0, 就对k进行+1运算重复执行上一步;<br>如果i==k,说明过程结束;</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">forth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i, k = <span class="number">2</span>;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.print(<span class="string">"请输入要分解质因数的正整数"</span>);</span><br><span class="line">        i = sc.nextInt(); <span class="comment">//将键盘获取的数值赋值给变量i</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (i &lt;= <span class="number">1</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">"不能被分解"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123; <span class="comment">//</span></span><br><span class="line">            System.out.print(<span class="string">"分解后的质因数为:1"</span>);</span><br><span class="line">            <span class="keyword">while</span> (k &lt;= i) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i % k == <span class="number">0</span>) &#123;</span><br><span class="line">                    System.out.print(<span class="string">"*"</span>+k);</span><br><span class="line">                    i /= k;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    k ++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><center>————–4/50————–</center>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java-每天一道练习题(3)</title>
       <link href="/2019/01/03/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-3/"/>
       <url>/2019/01/03/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-3/</url>
