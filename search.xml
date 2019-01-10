@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Java-每天一道练习题(10)</title>
+      <link href="/2019/01/10/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-10/"/>
+      <url>/2019/01/10/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-10/</url>
+      <content type="html"><![CDATA[<h1 id="第十天"><a href="#第十天" class="headerlink" title="第十天"></a>第十天</h1><p><b>一球从h米高度自由落下,每次落地后反跳回原高度的一半再落下<br>求小球弹跳几次后落地?小球弹跳总路程?</b></p><p>分析:</p><blockquote><p>总路程：<br>第一次落地经过：h<br>第二次落地经过：h+(h/2)*2<br>这里假设距离到达0.01m的高度时停止弹跳</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">tenth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入下落高度"</span>);</span><br><span class="line">        <span class="keyword">double</span> h = sc.nextDouble(); <span class="comment">//定义h为初始高度</span></span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;  <span class="comment">//统计弹跳次数</span></span><br><span class="line">        <span class="keyword">double</span> dis = h; <span class="comment">//第一次落地时经过距离等于初始高度</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">            h /= <span class="number">2</span>; <span class="comment">//小球每次弹跳高度时上次的一半</span></span><br><span class="line">            dis += h*<span class="number">2</span>; <span class="comment">//小球弹起后再落地,是一个来回的过程所以乘以二</span></span><br><span class="line">            count++;</span><br><span class="line">        &#125; <span class="keyword">while</span> (h &gt;= <span class="number">0.01</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"小球弹跳次数: "</span>+count);</span><br><span class="line">        System.out.println(<span class="string">"小球经过距离: "</span>+dis);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><center>————–10/50————–</center>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java-每天一道练习题(9)</title>
       <link href="/2019/01/09/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-9/"/>
       <url>/2019/01/09/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-9/</url>
