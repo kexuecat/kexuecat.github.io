@@ -3,6 +3,36 @@
   
     
     <entry>
+      <title>Java-每天一道练习题(17)</title>
+      <link href="/2019/01/17/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-17/"/>
+      <url>/2019/01/17/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-17/</url>
+      <content type="html"><![CDATA[<h1 id="第十七天"><a href="#第十七天" class="headerlink" title="第十七天"></a>第十七天</h1><p><b>猴子第一天摘了若干个桃子，当即吃了一半，还不解馋，又多吃了一个；第二天，吃剩下的桃子的一半，还不过瘾，又多吃了一个；以后每天都吃前一天剩下的一半多一个，到第10天想再吃时，只剩下一个桃子了。问第一天共摘了多少个桃子？</b></p><p>分析:<br>S10 = 1<br>S9 = 2(S10 + 1)<br>S8 = 2(S9 + 1)<br>……<br>Sn = 2(Sn+1 + 1)</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_17seventeenth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> day = <span class="number">9</span>, i = <span class="number">0</span>, j = <span class="number">1</span>;  </span><br><span class="line">        <span class="comment">//day为控制变量,i是总共的桃子数量,j表示最后一天只剩一个桃子</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (day &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            i = (j + <span class="number">1</span>) * <span class="number">2</span>;</span><br><span class="line">            j = i;</span><br><span class="line">            day --;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"第一天有"</span> + j + <span class="string">"个桃子"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><center>————–17/50————–</center>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Java-每天一道练习题(16)</title>
+      <link href="/2019/01/16/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-16/"/>
+      <url>/2019/01/16/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-16/</url>
+      <content type="html"><![CDATA[<h1 id="第十六天"><a href="#第十六天" class="headerlink" title="第十六天"></a>第十六天</h1><p><b>打印99乘法表</b></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_16sixteenth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] agrs)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;<span class="number">10</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=i; j++) &#123;</span><br><span class="line">                <span class="comment">//这里的判断可有可无，本人强迫症为了打印时对齐所以加了个限制条件</span></span><br><span class="line">                <span class="keyword">if</span>(i*j &lt; <span class="number">10</span>) &#123;  </span><br><span class="line">                    System.out.print(j+<span class="string">"*"</span>+i+<span class="string">"="</span>+j*i+<span class="string">"  "</span>);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    System.out.print(j+<span class="string">"*"</span>+i+<span class="string">"="</span>+j*i+<span class="string">" "</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><center>————–16/50————–</center>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java-每天一道练习题(15)</title>
       <link href="/2019/01/15/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-15/"/>
       <url>/2019/01/15/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-15/</url>
