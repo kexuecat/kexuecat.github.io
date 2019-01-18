@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Java-每天一道练习题(18)</title>
+      <link href="/2019/01/18/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-18/"/>
+      <url>/2019/01/18/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-18/</url>
+      <content type="html"><![CDATA[<h1 id="第十八天"><a href="#第十八天" class="headerlink" title="第十八天"></a>第十八天</h1><p><b>两个乒乓球队进行比赛,各出三人。甲队为a,b,c三人,乙队为x,y,z三人。已抽签决定比赛名单。有人向队员打听比赛的名单。a说他不和x比,c说他不和x,z比,列出对战名单</b></p><p>分析:<br>已知条件:<br>a不跟x比,<br>b,<br>c不跟x,z比  </p><p>a : y || a : z<br>b : x || b : y || b : z<br>c : y  </p><p>因为对手不会重复所以<br>a : z<br>b : x<br>c : y  </p><p>用可以用三层for循环嵌套实现</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_18eighteenth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">char</span> i=<span class="string">'x'</span>; i&lt;=<span class="string">'z'</span>; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">char</span> j=<span class="string">'x'</span>; j&lt;=<span class="string">'z'</span>; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(i != j)</span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">char</span> k=<span class="string">'x'</span>; k&lt;=<span class="string">'z'</span>; k++)&#123;</span><br><span class="line">                        <span class="keyword">if</span>(i != k &amp;&amp; j != k)</span><br><span class="line">                            <span class="keyword">if</span>(i != <span class="string">'x'</span> &amp;&amp; k != <span class="string">'x'</span> &amp;&amp; k != <span class="string">'z'</span>)</span><br><span class="line">                                System.out.println(<span class="string">"a的对手是:"</span>+i+<span class="string">"\n"</span>+<span class="string">"b的对手是:"</span>+j+<span class="string">"\n"</span>+<span class="string">"c的对手是:"</span>+k+<span class="string">"\n"</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><center>————–18/50————–</center>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java-每天一道练习题(17)</title>
       <link href="/2019/01/17/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-17/"/>
       <url>/2019/01/17/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-17/</url>
