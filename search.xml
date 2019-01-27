@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Java-每天一道练习题(27)</title>
+      <link href="/2019/01/27/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-27/"/>
+      <url>/2019/01/27/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-27/</url>
+      <content type="html"><![CDATA[<h1 id="第二十七天"><a href="#第二十七天" class="headerlink" title="第二十七天"></a>第二十七天</h1><p><b>求100之内的素数</b></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_27twenty_seventh</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> j,i;</span><br><span class="line">        <span class="keyword">for</span> (i=<span class="number">1</span>; i&lt;=<span class="number">100</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (j=<span class="number">2</span>;j&lt;=i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i % j == <span class="number">0</span>) &#123;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (i == j) &#123;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><center>————–27/50————–</center>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java-每天一道练习题(26)</title>
       <link href="/2019/01/26/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-26/"/>
       <url>/2019/01/26/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-26/</url>
