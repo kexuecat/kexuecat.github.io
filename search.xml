@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Java-每天一道练习题(29)</title>
+      <link href="/2019/01/29/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-29/"/>
+      <url>/2019/01/29/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-29/</url>
+      <content type="html"><![CDATA[<h1 id="第二十九天"><a href="#第二十九天" class="headerlink" title="第二十九天"></a>第二十九天</h1><p><b>求一个3*3矩阵对角线之和</b></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_29twenty_ninth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span>[][] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>][<span class="number">3</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">3</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;<span class="number">3</span>; j++) &#123;</span><br><span class="line">                arr[i][j] = sc.nextInt();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//这一步不理解可以画一个矩阵看一下</span></span><br><span class="line">        System.out.println(<span class="string">"第一条对角线"</span>+ (arr[<span class="number">0</span>][<span class="number">0</span>]+arr[<span class="number">1</span>][<span class="number">1</span>]+arr[<span class="number">2</span>][<span class="number">2</span>]));  </span><br><span class="line">        System.out.println(<span class="string">"第二条对角线"</span>+ (arr[<span class="number">0</span>][<span class="number">2</span>]+arr[<span class="number">1</span>][<span class="number">1</span>]+arr[<span class="number">2</span>][<span class="number">0</span>]));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><center>————–29/50————–</center>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java-每天一道练习题(28)</title>
       <link href="/2019/01/28/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-28/"/>
       <url>/2019/01/28/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-28/</url>
