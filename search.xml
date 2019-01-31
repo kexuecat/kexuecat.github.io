@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Java-每天一道练习题(31)</title>
+      <link href="/2019/01/31/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-31/"/>
+      <url>/2019/01/31/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-31/</url>
+      <content type="html"><![CDATA[<h1 id="第三十一天"><a href="#第三十一天" class="headerlink" title="第三十一天"></a>第三十一天</h1><p><b>将一个数组逆序输出</b></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_31thirty_first</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> arr1[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">12</span>];</span><br><span class="line">        Random r = <span class="keyword">new</span> Random();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">10</span>; i++) &#123;</span><br><span class="line">            arr1[i] = r.nextInt(<span class="number">100</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"原数组"</span>+ Arrays.toString(arr1));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> arr2[] = <span class="keyword">new</span> <span class="keyword">int</span>[arr1.length];</span><br><span class="line">        <span class="keyword">int</span> j = arr1.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;arr1.length; i++) &#123;</span><br><span class="line">            arr2[i] = arr1[j-<span class="number">1</span>];</span><br><span class="line">            --j;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"数组的逆序输出"</span>+ Arrays.toString(arr2));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><center>————–31/50————–</center>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java-每天一道练习题(30)</title>
       <link href="/2019/01/30/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-30/"/>
       <url>/2019/01/30/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-30/</url>
