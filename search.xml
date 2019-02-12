@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Java-每天一道练习题(43)</title>
+      <link href="/2019/02/12/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-43/"/>
+      <url>/2019/02/12/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-43/</url>
+      <content type="html"><![CDATA[<h1 id="第四十三天"><a href="#第四十三天" class="headerlink" title="第四十三天"></a>第四十三天</h1><p><b>0-7组成的奇数数量</b></p><blockquote><p>1位数: 1, 3, 5, 7(4种)<br>2位数: 7*4<br>3位数: 7*8*4<br>4位数: 7*8*8*4<br>…  </p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_43forty_third</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">8</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i == <span class="number">0</span>) &#123;<span class="comment">//一位数</span></span><br><span class="line">                count = <span class="number">4</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (i == <span class="number">1</span>) &#123;<span class="comment">//两位数</span></span><br><span class="line">                count *= <span class="number">7</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (i &gt;= <span class="number">2</span>) &#123;<span class="comment">//三位数往后，最高八位</span></span><br><span class="line">                count *= <span class="number">8</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            sum += count;</span><br><span class="line">            System.out.println(<span class="string">"组成"</span>+(i+<span class="number">1</span>)+<span class="string">"位数时有"</span>+count+<span class="string">"种组合方式"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"共有"</span>+sum+<span class="string">"种组合方式"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><center>————–43/50————–</center>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java-每天一道练习题(42)</title>
       <link href="/2019/02/11/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-42/"/>
       <url>/2019/02/11/Java-%E6%AF%8F%E5%A4%A9%E4%B8%80%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98-42/</url>
