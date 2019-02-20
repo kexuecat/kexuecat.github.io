@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第三十二天打印一个整数从右开始的4-7位数字 123456789101112131415161718192021import java.util.Scanner;public class _32thirty_second &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc = new Scanner(S">
+<meta name="description" content="第三十二天打印一个整数从右开始的4-7位数字">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(32)">
 <meta property="og:url" content="http://yoursite.com/2019/02/01/Java-每天一道练习题-32/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第三十二天打印一个整数从右开始的4-7位数字 123456789101112131415161718192021import java.util.Scanner;public class _32thirty_second &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc = new Scanner(S">
+<meta property="og:description" content="第三十二天打印一个整数从右开始的4-7位数字">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:21:17.477Z">
+<meta property="og:updated_time" content="2019-02-20T09:04:46.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(32)">
-<meta name="twitter:description" content="第三十二天打印一个整数从右开始的4-7位数字 123456789101112131415161718192021import java.util.Scanner;public class _32thirty_second &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc = new Scanner(S">
+<meta name="twitter:description" content="第三十二天打印一个整数从右开始的4-7位数字">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第三十二天"><a href="#第三十二天" class="headerlink" title="第三十二天"></a>第三十二天</h1><p><b>打印一个整数从右开始的4-7位数字</b></p>
+        <h1 id="第三十二天"><a href="#第三十二天" class="headerlink" title="第三十二天"></a>第三十二天</h1><p><b>打印一个整数从右开始的4-7位数字</b><br><a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_32thirty_second</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入一个7位以上正整数"</span>);</span><br><span class="line">        <span class="keyword">long</span> l = sc.nextLong();</span><br><span class="line">        String str = Long.toString(l);</span><br><span class="line">        <span class="keyword">char</span>[] chars = str.toCharArray();</span><br><span class="line">        <span class="keyword">int</span> i = chars.length;</span><br><span class="line">        <span class="keyword">if</span> (i &lt; <span class="number">7</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">"输入错误"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"4~7位为:"</span></span><br><span class="line">                    + chars[i-<span class="number">7</span>] + <span class="string">" "</span></span><br><span class="line">                    + chars[i-<span class="number">6</span>] + <span class="string">" "</span></span><br><span class="line">                    + chars[i-<span class="number">5</span>] + <span class="string">" "</span></span><br><span class="line">                    + chars[i-<span class="number">4</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–31/50————–</center>
 

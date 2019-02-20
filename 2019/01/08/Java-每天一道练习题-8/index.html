@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第八天求类似s = a + aa + aaa + a…a的值,a是一个数字   例如:s = 2 + 22 + 222几个数字相加由键盘控制 123456789101112131415161718import java.util.Scanner;public class eight &amp;#123;    public static void main(String[] args) &amp;#123;">
+<meta name="description" content="第八天求类似s = a + aa + aaa + a…a的值,a是一个数字">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(8)">
 <meta property="og:url" content="http://yoursite.com/2019/01/08/Java-每天一道练习题-8/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第八天求类似s = a + aa + aaa + a…a的值,a是一个数字   例如:s = 2 + 22 + 222几个数字相加由键盘控制 123456789101112131415161718import java.util.Scanner;public class eight &amp;#123;    public static void main(String[] args) &amp;#123;">
+<meta property="og:description" content="第八天求类似s = a + aa + aaa + a…a的值,a是一个数字">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:22:42.223Z">
+<meta property="og:updated_time" content="2019-02-20T09:05:56.604Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(8)">
-<meta name="twitter:description" content="第八天求类似s = a + aa + aaa + a…a的值,a是一个数字   例如:s = 2 + 22 + 222几个数字相加由键盘控制 123456789101112131415161718import java.util.Scanner;public class eight &amp;#123;    public static void main(String[] args) &amp;#123;">
+<meta name="twitter:description" content="第八天求类似s = a + aa + aaa + a…a的值,a是一个数字">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第八天"><a href="#第八天" class="headerlink" title="第八天"></a>第八天</h1><p><b>求类似s = a + aa + aaa + a…a的值,a是一个数字</b>  </p>
+        <h1 id="第八天"><a href="#第八天" class="headerlink" title="第八天"></a>第八天</h1><p><b>求类似s = a + aa + aaa + a…a的值,a是一个数字</b><br><a id="more"></a></p>
 <p>例如:<br>s = 2 + 22 + 222<br>几个数字相加由键盘控制</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">eight</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入a的值"</span>);</span><br><span class="line">        <span class="keyword">int</span> a = sc.nextInt();</span><br><span class="line">        System.out.println(<span class="string">"请输入最大数的位数"</span>);</span><br><span class="line">        <span class="keyword">int</span> c = sc.nextInt();</span><br><span class="line">        <span class="keyword">int</span> s = <span class="number">0</span>,t = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=c; i++) &#123;</span><br><span class="line">            t += a;</span><br><span class="line">            a *= <span class="number">10</span>;    <span class="comment">//前一个数和后一个数相差的数值为a*10^c</span></span><br><span class="line">            s += t;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–8/50————–</center>

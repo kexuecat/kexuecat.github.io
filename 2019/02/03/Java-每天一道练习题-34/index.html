@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第三十四天输入三个数按顺序排列 123456789101112131415161718import java.util.Arrays;import java.util.Scanner;public class _34thirty_fourth &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc = ne">
+<meta name="description" content="第三十四天输入三个数按顺序排列">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(34)">
 <meta property="og:url" content="http://yoursite.com/2019/02/03/Java-每天一道练习题-34/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第三十四天输入三个数按顺序排列 123456789101112131415161718import java.util.Arrays;import java.util.Scanner;public class _34thirty_fourth &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc = ne">
+<meta property="og:description" content="第三十四天输入三个数按顺序排列">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:21:30.733Z">
+<meta property="og:updated_time" content="2019-02-20T09:04:53.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(34)">
-<meta name="twitter:description" content="第三十四天输入三个数按顺序排列 123456789101112131415161718import java.util.Arrays;import java.util.Scanner;public class _34thirty_fourth &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc = ne">
+<meta name="twitter:description" content="第三十四天输入三个数按顺序排列">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第三十四天"><a href="#第三十四天" class="headerlink" title="第三十四天"></a>第三十四天</h1><p><b>输入三个数按顺序排列</b></p>
+        <h1 id="第三十四天"><a href="#第三十四天" class="headerlink" title="第三十四天"></a>第三十四天</h1><p><b>输入三个数按顺序排列</b><br><a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_34thirty_fourth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入三个数,用空格分隔"</span>);</span><br><span class="line">        String[] arr = sc.nextLine().split(<span class="string">" "</span>);</span><br><span class="line">        <span class="keyword">if</span> (arr.length &gt; <span class="number">3</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">"非法输入"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            Arrays.sort(arr);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;arr.length; i++) &#123;</span><br><span class="line">                System.out.print(arr[i]+<span class="string">" "</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–34/50————–</center>
 

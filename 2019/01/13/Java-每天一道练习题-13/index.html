@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第十三天完全平方指用一个整数乘以自己例如11，22，3*3等，依此类推。若一个数能表示成某个整数的平方的形式，则称这个数为完全平方数。完全平方数是非负数，而一个完全平方数的项有两个。 12345678910111213public class thirteenth &amp;#123;    public static void main(String[] args) &amp;#123;        int">
+<meta name="description" content="第十三天完全平方指用一个整数乘以自己例如11，22，3*3等，依此类推。若一个数能表示成某个整数的平方的形式，则称这个数为完全平方数。完全平方数是非负数，而一个完全平方数的项有两个。">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(13)">
 <meta property="og:url" content="http://yoursite.com/2019/01/13/Java-每天一道练习题-13/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第十三天完全平方指用一个整数乘以自己例如11，22，3*3等，依此类推。若一个数能表示成某个整数的平方的形式，则称这个数为完全平方数。完全平方数是非负数，而一个完全平方数的项有两个。 12345678910111213public class thirteenth &amp;#123;    public static void main(String[] args) &amp;#123;        int">
+<meta property="og:description" content="第十三天完全平方指用一个整数乘以自己例如11，22，3*3等，依此类推。若一个数能表示成某个整数的平方的形式，则称这个数为完全平方数。完全平方数是非负数，而一个完全平方数的项有两个。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:18:39.919Z">
+<meta property="og:updated_time" content="2019-02-20T08:45:46.475Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(13)">
-<meta name="twitter:description" content="第十三天完全平方指用一个整数乘以自己例如11，22，3*3等，依此类推。若一个数能表示成某个整数的平方的形式，则称这个数为完全平方数。完全平方数是非负数，而一个完全平方数的项有两个。 12345678910111213public class thirteenth &amp;#123;    public static void main(String[] args) &amp;#123;        int">
+<meta name="twitter:description" content="第十三天完全平方指用一个整数乘以自己例如11，22，3*3等，依此类推。若一个数能表示成某个整数的平方的形式，则称这个数为完全平方数。完全平方数是非负数，而一个完全平方数的项有两个。">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第十三天"><a href="#第十三天" class="headerlink" title="第十三天"></a>第十三天</h1><p><b><br>完全平方指用一个整数乘以自己例如1<em>1，2</em>2，3*3等，依此类推。若一个数能表示成某个整数的平方的形式，则称这个数为完全平方数。完全平方数是非负数，而一个完全平方数的项有两个。<br></b></p>
+        <h1 id="第十三天"><a href="#第十三天" class="headerlink" title="第十三天"></a>第十三天</h1><p><b><br>完全平方指用一个整数乘以自己例如1<em>1，2</em>2，3*3等，依此类推。若一个数能表示成某个整数的平方的形式，则称这个数为完全平方数。完全平方数是非负数，而一个完全平方数的项有两个。<br></b><br><a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">thirteenth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> num1 = <span class="number">0</span>,num2 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;=<span class="number">100000</span>; i++) &#123;</span><br><span class="line">            num1 = (<span class="keyword">int</span>) Math.sqrt(i + <span class="number">100</span>);    </span><br><span class="line">            num2 = (<span class="keyword">int</span>) Math.sqrt(i + <span class="number">268</span>);</span><br><span class="line">            <span class="keyword">if</span> (num1 * num1 == (i+<span class="number">100</span>) &amp;&amp; num2 * num2 == (i + <span class="number">268</span>)) &#123;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–13/50————–</center>
       

@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第二十五天输入一个数字判断是不是回文数 回文数是指一个像12321这样“对称”的数即：将这个数的数字按相反的顺序重新排列后，所得到的数和原来的数一样。 123456789101112131415161718192021import java.util.Scanner;public class _25twenty_fifth &amp;#123;    public static void main(Str">
+<meta name="description" content="第二十五天输入一个数字判断是不是回文数">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(25)">
 <meta property="og:url" content="http://yoursite.com/2019/01/25/Java-每天一道练习题-25/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第二十五天输入一个数字判断是不是回文数 回文数是指一个像12321这样“对称”的数即：将这个数的数字按相反的顺序重新排列后，所得到的数和原来的数一样。 123456789101112131415161718192021import java.util.Scanner;public class _25twenty_fifth &amp;#123;    public static void main(Str">
+<meta property="og:description" content="第二十五天输入一个数字判断是不是回文数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:20:54.582Z">
+<meta property="og:updated_time" content="2019-02-20T09:04:25.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(25)">
-<meta name="twitter:description" content="第二十五天输入一个数字判断是不是回文数 回文数是指一个像12321这样“对称”的数即：将这个数的数字按相反的顺序重新排列后，所得到的数和原来的数一样。 123456789101112131415161718192021import java.util.Scanner;public class _25twenty_fifth &amp;#123;    public static void main(Str">
+<meta name="twitter:description" content="第二十五天输入一个数字判断是不是回文数">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第二十五天"><a href="#第二十五天" class="headerlink" title="第二十五天"></a>第二十五天</h1><p><b>输入一个数字判断是不是回文数</b></p>
+        <h1 id="第二十五天"><a href="#第二十五天" class="headerlink" title="第二十五天"></a>第二十五天</h1><p><b>输入一个数字判断是不是回文数</b><br><a id="more"></a></p>
 <p>回文数是指一个像12321这样“对称”的数<br>即：将这个数的数字按相反的顺序重新排列后，所得到的数和原来的数一样。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_25twenty_fifth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"输入一个数字"</span>);</span><br><span class="line">        String str = sc.nextLine();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//StringBuilder 提供了很多对字符串的操作</span></span><br><span class="line">        <span class="comment">//reverse()方法可以将字符串翻转</span></span><br><span class="line">        StringBuilder stringBuilder = <span class="keyword">new</span> StringBuilder(str);</span><br><span class="line">        stringBuilder.reverse();</span><br><span class="line">        String newStr = <span class="keyword">new</span> String(stringBuilder);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (newStr.equals(str)) &#123;</span><br><span class="line">            System.out.println(str+<span class="string">"是回文数"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(str+<span class="string">"不是回文数"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–25/50————–</center>

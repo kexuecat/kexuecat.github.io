@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第四十七天读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的＊。 12345678910111213141516171819202122232425262728import java.util.Scanner;public class _47forty_seventh &amp;#123;    public static void main(String[] args) &amp;#123;">
+<meta name="description" content="第四十七天读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的＊。">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(47)">
 <meta property="og:url" content="http://yoursite.com/2019/02/16/Java-每天一道练习题-47/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第四十七天读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的＊。 12345678910111213141516171819202122232425262728import java.util.Scanner;public class _47forty_seventh &amp;#123;    public static void main(String[] args) &amp;#123;">
+<meta property="og:description" content="第四十七天读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的＊。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:22:19.158Z">
+<meta property="og:updated_time" content="2019-02-20T09:05:39.030Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(47)">
-<meta name="twitter:description" content="第四十七天读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的＊。 12345678910111213141516171819202122232425262728import java.util.Scanner;public class _47forty_seventh &amp;#123;    public static void main(String[] args) &amp;#123;">
+<meta name="twitter:description" content="第四十七天读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的＊。">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第四十七天"><a href="#第四十七天" class="headerlink" title="第四十七天"></a>第四十七天</h1><p><b>读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的＊。</b></p>
+        <h1 id="第四十七天"><a href="#第四十七天" class="headerlink" title="第四十七天"></a>第四十七天</h1><p><b>读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的＊。</b><br><a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_47forty_seventh</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入7个大于等于1小于等于50的整数"</span>);</span><br><span class="line">        <span class="keyword">int</span>[] n = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">7</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">7</span>; i++) &#123;</span><br><span class="line">            n[i] = sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span> (n[i] &gt; <span class="number">50</span> || n[i] &lt; <span class="number">1</span>) &#123;</span><br><span class="line">                System.out.println(<span class="string">"输入不合法,请重新输入"</span>);</span><br><span class="line">                i = -<span class="number">1</span>; <span class="comment">//输入不合法重置数组重新输入</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> m=<span class="number">0</span>; m&lt;n.length; m++) &#123;</span><br><span class="line">            System.out.println(printStar(n[m]));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">printStar</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        String star = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;n; j++) &#123;</span><br><span class="line">            star += <span class="string">"*"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> star;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–47/50————–</center>
       

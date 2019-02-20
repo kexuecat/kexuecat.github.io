@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第二十一天求1!+2!+3!+4!+…+20! 1234567891011121314151617181920public class _21twenty_first &amp;#123;    public static void main(String[] args) &amp;#123;        long sum = 0;           //这里要用长整型,第一次写结果不对，检查发现int位数不">
+<meta name="description" content="第二十一天求1!+2!+3!+4!+…+20!">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题-21">
 <meta property="og:url" content="http://yoursite.com/2019/01/21/Java-每天一道练习题-21/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第二十一天求1!+2!+3!+4!+…+20! 1234567891011121314151617181920public class _21twenty_first &amp;#123;    public static void main(String[] args) &amp;#123;        long sum = 0;           //这里要用长整型,第一次写结果不对，检查发现int位数不">
+<meta property="og:description" content="第二十一天求1!+2!+3!+4!+…+20!">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:20:42.968Z">
+<meta property="og:updated_time" content="2019-02-20T09:04:14.831Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题-21">
-<meta name="twitter:description" content="第二十一天求1!+2!+3!+4!+…+20! 1234567891011121314151617181920public class _21twenty_first &amp;#123;    public static void main(String[] args) &amp;#123;        long sum = 0;           //这里要用长整型,第一次写结果不对，检查发现int位数不">
+<meta name="twitter:description" content="第二十一天求1!+2!+3!+4!+…+20!">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第二十一天"><a href="#第二十一天" class="headerlink" title="第二十一天"></a>第二十一天</h1><p><b>求1!+2!+3!+4!+…+20!</b></p>
+        <h1 id="第二十一天"><a href="#第二十一天" class="headerlink" title="第二十一天"></a>第二十一天</h1><p><b>求1!+2!+3!+4!+…+20!</b><br><a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_21twenty_first</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> sum = <span class="number">0</span>;   </span><br><span class="line">        <span class="comment">//这里要用长整型,第一次写结果不对，检查发现int位数不够，自动四舍五入了</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">20</span>; i++) &#123;</span><br><span class="line">            sum += fun(i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"1到20的阶乘为："</span>+sum);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">long</span> <span class="title">fun</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> temp = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=i; j++) &#123;</span><br><span class="line">            temp *= j;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–21/50————–</center>
       

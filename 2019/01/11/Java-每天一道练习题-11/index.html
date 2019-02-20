@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第十一天有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？   1234567891011121314151617public class eleventh &amp;#123;    public static void main(String [] args) &amp;#123;        int count = 0;  //计数        for (int h=1; h&amp;">
+<meta name="description" content="第十一天有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(11)">
 <meta property="og:url" content="http://yoursite.com/2019/01/11/Java-每天一道练习题-11/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第十一天有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？   1234567891011121314151617public class eleventh &amp;#123;    public static void main(String [] args) &amp;#123;        int count = 0;  //计数        for (int h=1; h&amp;">
+<meta property="og:description" content="第十一天有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:18:33.109Z">
+<meta property="og:updated_time" content="2019-02-20T08:45:31.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(11)">
-<meta name="twitter:description" content="第十一天有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？   1234567891011121314151617public class eleventh &amp;#123;    public static void main(String [] args) &amp;#123;        int count = 0;  //计数        for (int h=1; h&amp;">
+<meta name="twitter:description" content="第十一天有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第十一天"><a href="#第十一天" class="headerlink" title="第十一天"></a>第十一天</h1><p><b>有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？</b>  </p>
+        <h1 id="第十一天"><a href="#第十一天" class="headerlink" title="第十一天"></a>第十一天</h1><p><b>有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？</b><br><a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">eleventh</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;  <span class="comment">//计数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> h=<span class="number">1</span>; h&lt;=<span class="number">4</span>; h++) &#123;  <span class="comment">//百位</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> t=<span class="number">1</span>; t&lt;=<span class="number">4</span>; t++)&#123;   <span class="comment">//十位</span></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> b=<span class="number">1</span>; b&lt;=<span class="number">4</span>; b++)&#123;   <span class="comment">//个位</span></span><br><span class="line">                    <span class="keyword">if</span> (h != t &amp;&amp; t != b &amp;&amp; h != b) &#123;   <span class="comment">//如果互不相同输出</span></span><br><span class="line">                        System.out.println(h*<span class="number">100</span>+t*<span class="number">10</span>+b);</span><br><span class="line">                        count ++;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"一共可以组成"</span>+count+<span class="string">"个数"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–11/50————–</center>
       

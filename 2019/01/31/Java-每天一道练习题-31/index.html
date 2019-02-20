@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第三十一天将一个数组逆序输出 123456789101112131415161718192021import java.util.Arrays;import java.util.Random;public class _31thirty_first &amp;#123;    public static void main(String[] args) &amp;#123;        int arr1[] =">
+<meta name="description" content="第三十一天将一个数组逆序输出">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(31)">
 <meta property="og:url" content="http://yoursite.com/2019/01/31/Java-每天一道练习题-31/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第三十一天将一个数组逆序输出 123456789101112131415161718192021import java.util.Arrays;import java.util.Random;public class _31thirty_first &amp;#123;    public static void main(String[] args) &amp;#123;        int arr1[] =">
+<meta property="og:description" content="第三十一天将一个数组逆序输出">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:21:14.647Z">
+<meta property="og:updated_time" content="2019-02-20T09:04:43.850Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(31)">
-<meta name="twitter:description" content="第三十一天将一个数组逆序输出 123456789101112131415161718192021import java.util.Arrays;import java.util.Random;public class _31thirty_first &amp;#123;    public static void main(String[] args) &amp;#123;        int arr1[] =">
+<meta name="twitter:description" content="第三十一天将一个数组逆序输出">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第三十一天"><a href="#第三十一天" class="headerlink" title="第三十一天"></a>第三十一天</h1><p><b>将一个数组逆序输出</b></p>
+        <h1 id="第三十一天"><a href="#第三十一天" class="headerlink" title="第三十一天"></a>第三十一天</h1><p><b>将一个数组逆序输出</b><br><a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_31thirty_first</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> arr1[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">12</span>];</span><br><span class="line">        Random r = <span class="keyword">new</span> Random();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">10</span>; i++) &#123;</span><br><span class="line">            arr1[i] = r.nextInt(<span class="number">100</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"原数组"</span>+ Arrays.toString(arr1));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> arr2[] = <span class="keyword">new</span> <span class="keyword">int</span>[arr1.length];</span><br><span class="line">        <span class="keyword">int</span> j = arr1.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;arr1.length; i++) &#123;</span><br><span class="line">            arr2[i] = arr1[j-<span class="number">1</span>];</span><br><span class="line">            --j;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"数组的逆序输出"</span>+ Arrays.toString(arr2));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–31/50————–</center>
       

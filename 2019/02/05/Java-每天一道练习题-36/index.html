@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第三十六天有n个整数,使前面各数顺序向后移m个位置,最后m个数变成最前面m个数 12345678910111213141516171819202122232425262728import java.util.LinkedList;import java.util.List;import java.util.Scanner;public class _36thirty_sixth &amp;#123;">
+<meta name="description" content="第三十六天有n个整数,使前面各数顺序向后移m个位置,最后m个数变成最前面m个数">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(36)">
 <meta property="og:url" content="http://yoursite.com/2019/02/05/Java-每天一道练习题-36/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第三十六天有n个整数,使前面各数顺序向后移m个位置,最后m个数变成最前面m个数 12345678910111213141516171819202122232425262728import java.util.LinkedList;import java.util.List;import java.util.Scanner;public class _36thirty_sixth &amp;#123;">
+<meta property="og:description" content="第三十六天有n个整数,使前面各数顺序向后移m个位置,最后m个数变成最前面m个数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:21:36.880Z">
+<meta property="og:updated_time" content="2019-02-20T09:04:58.722Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(36)">
-<meta name="twitter:description" content="第三十六天有n个整数,使前面各数顺序向后移m个位置,最后m个数变成最前面m个数 12345678910111213141516171819202122232425262728import java.util.LinkedList;import java.util.List;import java.util.Scanner;public class _36thirty_sixth &amp;#123;">
+<meta name="twitter:description" content="第三十六天有n个整数,使前面各数顺序向后移m个位置,最后m个数变成最前面m个数">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <h1 id="第三十六天"><a href="#第三十六天" class="headerlink" title="第三十六天"></a>第三十六天</h1><p><b>有n个整数,使前面各数顺序向后移m个位置,最后m个数变成最前面m个数</b></p>
+        <h1 id="第三十六天"><a href="#第三十六天" class="headerlink" title="第三十六天"></a>第三十六天</h1><p><b>有n个整数,使前面各数顺序向后移m个位置,最后m个数变成最前面m个数</b><br><a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.LinkedList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_36thirty_sixth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入要输入的数字个数n"</span>);</span><br><span class="line">        <span class="keyword">int</span> n = sc.nextInt();</span><br><span class="line">        System.out.println(<span class="string">"请输入要向后移动数字的个数"</span>);</span><br><span class="line">        <span class="keyword">int</span> m = sc.nextInt();</span><br><span class="line"></span><br><span class="line">        LinkedList&lt;Integer&gt; list = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;n; i++) &#123;</span><br><span class="line">            System.out.println(<span class="string">"请输入第"</span>+(i+<span class="number">1</span>)+<span class="string">"个数"</span>);</span><br><span class="line">            list.add(sc.nextInt());</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"原来的顺序"</span> + list.toString());</span><br><span class="line"></span><br><span class="line">        List&lt;Integer&gt; temp1 = list.subList(list.size()-m,list.size());</span><br><span class="line">        List&lt;Integer&gt; temp2 = list.subList(<span class="number">0</span>, list.size()-m);</span><br><span class="line"></span><br><span class="line">        temp2.addAll(<span class="number">0</span>, temp1);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"移动后顺序"</span> + temp2.toString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–36/50————–</center>
       

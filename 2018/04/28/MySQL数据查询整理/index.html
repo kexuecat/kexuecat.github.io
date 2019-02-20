@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="MySQL——常用查询整理 MySQL查询语句结构复杂难懂，特地开一个连载记录分享一下查询有关知识简单查询（一）简单查询是按照一定的条件在单一的表上进行数据查询，还包括查询结果的排序与利用结果生成新表。完整的SELECT语句结构:12345678select&amp;lt;子句 1&amp;gt;	from&amp;lt;子句 2&amp;gt;		[where &amp;lt;表达式 1&amp;gt;]		[group by &amp;lt;子句">
+<meta name="description" content="MySQL——常用查询整理">
 <meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL数据查询整理">
 <meta property="og:url" content="http://yoursite.com/2018/04/28/MySQL数据查询整理/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="MySQL——常用查询整理 MySQL查询语句结构复杂难懂，特地开一个连载记录分享一下查询有关知识简单查询（一）简单查询是按照一定的条件在单一的表上进行数据查询，还包括查询结果的排序与利用结果生成新表。完整的SELECT语句结构:12345678select&amp;lt;子句 1&amp;gt;	from&amp;lt;子句 2&amp;gt;		[where &amp;lt;表达式 1&amp;gt;]		[group by &amp;lt;子句">
+<meta property="og:description" content="MySQL——常用查询整理">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-19T11:14:49.774Z">
+<meta property="og:updated_time" content="2019-02-20T09:06:06.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL数据查询整理">
-<meta name="twitter:description" content="MySQL——常用查询整理 MySQL查询语句结构复杂难懂，特地开一个连载记录分享一下查询有关知识简单查询（一）简单查询是按照一定的条件在单一的表上进行数据查询，还包括查询结果的排序与利用结果生成新表。完整的SELECT语句结构:12345678select&amp;lt;子句 1&amp;gt;	from&amp;lt;子句 2&amp;gt;		[where &amp;lt;表达式 1&amp;gt;]		[group by &amp;lt;子句">
+<meta name="twitter:description" content="MySQL——常用查询整理">
 
 
 
@@ -378,7 +378,7 @@
       
 
       
-        <p></p><h1>MySQL——常用查询整理</h1><p></p>
+        <p></p><h1>MySQL——常用查询整理</h1><br><a id="more"></a><p></p>
 <p><br>MySQL查询语句结构复杂难懂，特地开一个连载记录分享一下查询有关知识<br></p><br><h2>简单查询（一）</h2><br><p><br>简单查询是按照一定的条件在单一的表上进行数据查询，还包括查询结果的排序与利用结果生成新表。<br></p><br>完整的SELECT语句结构:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select&lt;子句 1&gt;</span><br><span class="line">	from&lt;子句 2&gt;</span><br><span class="line">		[where &lt;表达式 1&gt;]</span><br><span class="line">		[group by &lt;子句 3&gt;]</span><br><span class="line">		[having &lt;表达式 2&gt;]</span><br><span class="line">		[order by &lt;子句 4&gt;]</span><br><span class="line">		[limit &lt;子句 5&gt;]</span><br><span class="line">		[union &lt;操作符&gt;]</span><br></pre></td></tr></table></figure><br><br><p><br>select 子句指定查询结果中需要返回的值<br>from 子句指定从其中检索行的表和视图<br>where 表达式指定查询的搜索条件<br>group by 子句指定查询结果的分组条件<br>having 表达式指定分组或集合的查询条件<br>order by 子句指定查询结果的排序方法<br>limit 子句可以被用于限制被 select 语句返回的行数<br></p>
       
     </div>

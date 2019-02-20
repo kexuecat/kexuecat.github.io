@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="第十五天输入多个数字，按照从小到大排列。排序算法有很多，这次用的是冒泡排序法 1234567891011121314151617181920212223242526272829303132import java.util.Scanner;public class _15fifteenth &amp;#123;    public static void main(String[] args) &amp;#123;">
+<meta name="description" content="第十五天输入多个数字，按照从小到大排列。">
 <meta name="keywords" content="Java-每天一道练习题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java-每天一道练习题(15)">
 <meta property="og:url" content="http://yoursite.com/2019/01/15/Java-每天一道练习题-15/index.html">
 <meta property="og:site_name" content="SkyMirror &#39; s Blog">
-<meta property="og:description" content="第十五天输入多个数字，按照从小到大排列。排序算法有很多，这次用的是冒泡排序法 1234567891011121314151617181920212223242526272829303132import java.util.Scanner;public class _15fifteenth &amp;#123;    public static void main(String[] args) &amp;#123;">
+<meta property="og:description" content="第十五天输入多个数字，按照从小到大排列。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T08:18:46.342Z">
+<meta property="og:updated_time" content="2019-02-20T08:45:53.489Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-每天一道练习题(15)">
-<meta name="twitter:description" content="第十五天输入多个数字，按照从小到大排列。排序算法有很多，这次用的是冒泡排序法 1234567891011121314151617181920212223242526272829303132import java.util.Scanner;public class _15fifteenth &amp;#123;    public static void main(String[] args) &amp;#123;">
+<meta name="twitter:description" content="第十五天输入多个数字，按照从小到大排列。">
 
 
 
@@ -378,7 +378,8 @@
       
 
       
-        <h1 id="第十五天"><a href="#第十五天" class="headerlink" title="第十五天"></a>第十五天</h1><p><b>输入多个数字，按照从小到大排列。</b><br>排序算法有很多，这次用的是冒泡排序法</p>
+        <h1 id="第十五天"><a href="#第十五天" class="headerlink" title="第十五天"></a>第十五天</h1><p><b>输入多个数字，按照从小到大排列。</b><br><a id="more"></a></p>
+<p>排序算法有很多，这次用的是冒泡排序法</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_15fifteenth</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"输入多个整数,用空格分开"</span>);</span><br><span class="line"></span><br><span class="line">        String inputString = sc.nextLine();</span><br><span class="line">        String stringArr[] = inputString.split(<span class="string">" "</span>);  </span><br><span class="line">        <span class="comment">//split方法可以将字符串分割成字符串数组</span></span><br><span class="line">        <span class="keyword">int</span> num[] = <span class="keyword">new</span> <span class="keyword">int</span>[stringArr.length];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;stringArr.length;i++) &#123;   </span><br><span class="line">        <span class="comment">//从字符串数组中取出数据转换为数字存入数字数组</span></span><br><span class="line">            num[i] = Integer.parseInt(stringArr[i]);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> temp = <span class="number">0</span>;   <span class="comment">//冒泡排序</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;num.length; j++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (num[i] &gt; num[i + <span class="number">1</span>]) &#123;</span><br><span class="line">                    temp = num[i];</span><br><span class="line">                    num[i] = num[i + <span class="number">1</span>];</span><br><span class="line">                    num[i + <span class="number">1</span>] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//将排序后得数组打印出来</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num.length; i++) &#123;</span><br><span class="line">            System.out.print(num[i]+<span class="string">" "</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <center>————–15/50————–</center>
       
